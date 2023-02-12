@@ -20,7 +20,7 @@ body{
 }
 
 .logo img{
-    width: 40px;
+    height:40px
 }
 
 .links ul{
@@ -106,3 +106,139 @@ box-shadow:  7px 7px 14px #cccccc,
 
 }
 
+.respon{
+    display: none;
+}
+
+@media (max-width: 600px) {
+
+    .respon{
+        display: block;
+    }
+    .links li{
+        display: none;
+    }
+
+    .img{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .fa-bars{
+        display: block;
+        cursor: pointer;
+        color: #0e0e3b;
+        font-size: 20px;
+    }
+
+    .fa-xmark{
+        display: none;
+        color: #0e0e3b;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    
+.quote{
+    padding: 50px 25px;
+    background-color: #eee;
+}
+
+.quote p{
+    font-style: italic;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.banner{
+    background-color: rgb(14, 14, 59);
+    color: white;
+    padding: 200px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 28px;
+}
+
+.banner p{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+button{
+    font-size: 16px;
+    padding: 8px 16px;
+    color: #0e0e3b;
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.img img{
+    width: 300px;
+    border-radius: 12px;
+background: linear-gradient(145deg, #cacaca, #f0f0f0);
+box-shadow:  7px 7px 14px #cccccc,
+             -7px -7px 14px #f4f4f4;
+}
+
+.links1{
+   display:block;
+   background-color:#e9ebec;
+   height: auto;
+   width: 300px;
+   position: absolute;
+   right: 0%;
+   border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+   padding: 0px 1px 1px 1px;
+    display: none;
+    z-index: 2;
+
+    
+    animation-name: animatemodal;
+    animation-duration: .4s;
+}
+
+.links1 li{
+    text-decoration: none;
+    color: #0e0e3b;
+    list-style: none;
+    padding: 10px 10px;
+    background-color: #d2d3d3;
+    margin-bottom: 1px;
+    text-align: center;
+    transition: .4s;
+  
+}
+
+.links1 li:last-child{
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.links1 li:hover{
+    background-color: #0e0e3b ;
+    color: white;
+}
+
+}
+
+
+@keyframes animatemodal{
+    from{
+        top: -120px;
+        opacity: 0;
+    }
+
+    to{
+        top: 57px;
+        opacity:1;
+    }
+}
