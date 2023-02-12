@@ -14,3 +14,4 @@ xmark.addEventListener('click', function(){
     bar.style.display = 'block'
     xmark.style.display = 'none'
 })
+
